@@ -1,5 +1,6 @@
 import multiprocessing
 import socket
+import sys
 
 
 def scan_port(ip, port):
@@ -24,7 +25,5 @@ def tcp_scan(ip, startPort, endPort):
 
 
 if __name__ == '__main__':
-    ip = 'localhost'
-    startPort = 0
-    endPort = 1000
+    ip, startPort, endPort = sys.argv[1], int(sys.argv[2]),  int(sys.argv[3])
     tcp_scan(ip, startPort, endPort)
