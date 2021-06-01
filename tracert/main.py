@@ -1,5 +1,6 @@
 import re
 import subprocess
+import sys
 from json import loads
 from urllib import request
 
@@ -76,4 +77,4 @@ def get_route(address):
     return format_table(rows)
 
 
-print(get_route("8.8.8.8"))
+print(get_route(sys.argv[1]))
