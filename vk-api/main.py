@@ -3,8 +3,8 @@ import socket
 import ssl
 from datetime import datetime
 
-token = ""
-user_id = ""
+token = "b61145d694ec154d927af0c0c38cac9b6b82ecbfcaba4bdfed2c7b59e9eb27abae26b436f24582ab34b14"
+user_id = "208550102"
 host = "api.vk.com"
 
 
